@@ -15,7 +15,7 @@ def Download():
     if Ytb_Link == '':
         return
     path_Salva_Video = askdirectory()
-    if path_Salva_Video is None:
+    if path_Salva_Video == "":
         return
     Video = YouTube(str(Ytb_Link))
     print("Titolo: " + Video.title)
